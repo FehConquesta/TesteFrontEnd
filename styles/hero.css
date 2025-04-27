@@ -1,0 +1,60 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    padding: 0 120px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 20%, rgba(16, 16, 16, 0)),
+      url('/assets/imgs/header.jpg');  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .text__container{
+    text-align: left;
+    max-width: 909px;
+    
+  
+  }
+  
+  .title__magenta{
+    font-family: 'Gotham HTF', sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 2px #ED145B;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle__bold {
+    font-family: 'Gotham HTF', sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #d6e7f2;
+    margin-bottom: 20px;
+  }
+  
+  
+  .description {
+      font-family: 'Gotham HTF', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #d6e7f2;
+      max-width: 600px;
+      margin-top: 20px;
+    
+  }
+  
+  
+
+  
+
+  
+  
+  
