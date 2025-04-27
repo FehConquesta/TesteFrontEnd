@@ -49,12 +49,23 @@ document.addEventListener('DOMContentLoaded', () => {
   const accordionHeaders = document.querySelectorAll('.accordion-header');
 
   accordionHeaders.forEach(header => {
-    header.addEventListener('click', function() {
-      const activeItem = document.querySelector('.accordion-item.active');
-      if (activeItem && activeItem !== this.parentNode) {
-        activeItem.classList.remove('active');
-      }
-      this.parentNode.classList.toggle('active');
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      const content = header.nextElementSibling;
+      const icon = header.querySelector('.accordion-icon');
+  
+      // Fecha todos os outros primeiro (se quiser comportamento tipo "só um aberto")
+      document.querySelectorAll('.accordion-item').forEach(i => {
+        if (i !== item) {
+          i.classList.remove('open');
+          i.querySelector('.accordion-icon').src = '/assets/svg/cursor-open.svg';
+        }
+      });
+  
+      // Alterna o item atual
+      const isOpen = item.classList.toggle('open');
+      icon.src = isOpen ? '/assets/svg/cursor-close.svg' : '/assets/svg/cursor-open.svg';
     });
   });
+
 });
