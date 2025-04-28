@@ -1,0 +1,93 @@
+.structure {
+  position: relative;
+  background-color: #000; /* fundo principal */
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+.structure::before,
+.structure::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 600px;
+  height: 600px;
+  background: #006BB780;
+  filter: blur(400px);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.structure::before {
+  left: -300px;
+}
+
+.structure::after {
+  right: -300px;
+}
+
+.section-title {
+  font-family: 'GothamHTF-Book', sans-serif;
+  font-size: 3rem;
+  color: #D6E6F2;
+  text-align: left;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.accordion-item {
+  border-top: 2px solid #ffffff50;
+  position: relative;
+  z-index: 1;
+}
+
+.accordion-item.open {
+  border-top: 2px solid #D40067; /* magenta */
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 20px 0;
+  background: none;
+  border: none;
+  font-family: 'GothamHTF-Bold', sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.accordion-header:hover {
+  color: #D40067;
+}
+
+.accordion-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  font-family: 'GothamHTF-Book', sans-serif;
+  font-size: 1rem;
+  color: #D6E6F2;
+  padding: 0 0;
+}
+
+.accordion-item.open .accordion-content {
+  max-height: 1000px;
+  opacity: 1;
+  padding: 20px 0;
+}
+

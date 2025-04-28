@@ -48,24 +48,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const accordionHeaders = document.querySelectorAll('.accordion-header');
 
+  function closeAllAccordions() {
+    document.querySelectorAll('.accordion-item').forEach(item => {
+      item.classList.remove('open');
+      const icon = item.querySelector('.accordion-icon');
+      if (icon) {
+        icon.src = '/assets/svg/cursor-open.svg';
+      }
+    });
+  }
+
   accordionHeaders.forEach(header => {
     header.addEventListener('click', () => {
       const item = header.parentElement;
-      const content = header.nextElementSibling;
-      const icon = header.querySelector('.accordion-icon');
-  
-      // Fecha todos os outros primeiro (se quiser comportamento tipo "só um aberto")
-      document.querySelectorAll('.accordion-item').forEach(i => {
-        if (i !== item) {
-          i.classList.remove('open');
-          i.querySelector('.accordion-icon').src = '/assets/svg/cursor-open.svg';
+      const isOpen = item.classList.contains('open');
+
+      closeAllAccordions();
+
+      if (!isOpen) {
+        item.classList.add('open');
+        const icon = item.querySelector('.accordion-icon');
+        if (icon) {
+          icon.src = '/assets/svg/cursor-close.svg';
         }
-      });
-  
-      // Alterna o item atual
-      const isOpen = item.classList.toggle('open');
-      icon.src = isOpen ? '/assets/svg/cursor-close.svg' : '/assets/svg/cursor-open.svg';
+      }
     });
   });
 
-});
+  
+  const firstItem = document.querySelector('.accordion-item');
+  if (firstItem) {
+    firstItem.classList.add('open');
+    const firstIcon = firstItem.querySelector('.accordion-icon');
+    if (firstIcon) {
+      firstIcon.src = '/assets/svg/cursor-close.svg';
+    }
+  }
+  });
+
