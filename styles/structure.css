@@ -9,9 +9,9 @@
 .structure::after {
   content: '';
   position: absolute;
-  top: 50%;
-  width: 600px;
-  height: 600px;
+  top: 2926px;
+  width: 450px;
+  height: 450px;
   background: #006BB780;
   filter: blur(400px);
   border-radius: 50%;
@@ -20,7 +20,7 @@
 }
 
 .structure::before {
-  left: -300px;
+  left: -200px;
 }
 
 .structure::after {
@@ -63,9 +63,6 @@
   transition: color 0.3s;
 }
 
-.accordion-header:hover {
-  color: #D40067;
-}
 
 .accordion-icon {
   width: 20px;

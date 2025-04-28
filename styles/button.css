@@ -80,9 +80,9 @@
     height: 24px;
   }
   #scrollTopBtn {
-    opacity: 0; /* começa invisível */
-    pointer-events: none; /* impede que clique nele enquanto invisível */
-    transition: opacity 0.3s ease; /* animação suave */
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.3s ease; 
   }
   #scrollTopBtn.show {
     opacity: 1;

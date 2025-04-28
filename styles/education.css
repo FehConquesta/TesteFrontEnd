@@ -1,6 +1,10 @@
 .section-education {
     padding: 80px 20px;
     position: relative;
+    background-image: url('/assets/imgs/fiap_backgroud.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
   .container-education {
