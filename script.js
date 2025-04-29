@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   const titles = document.querySelectorAll('.animated-title');
   titles.forEach((title, index) => {
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     const scrollPercent = (scrollTop / docHeight) * 100;
     progress.style.width = scrollPercent + '%';
-    scrollTopBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
   });
 
   const modal = document.getElementById('modal');
@@ -34,16 +32,27 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.style.display = "none";
   };
 
-  window.addEventListener('scroll', () => {
-    const scrollTopBtn = document.getElementById('scrollTopBtn');
-    const educationSection = document.getElementById('education');
-    const educationTop = educationSection.offsetTop;
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
   
-    if (window.scrollY > educationTop) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
       scrollTopBtn.classList.add('show');
     } else {
       scrollTopBtn.classList.remove('show');
     }
+  });
+
+  scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   });
 
   const accordionHeaders = document.querySelectorAll('.accordion-header');
@@ -53,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       item.classList.remove('open');
       const icon = item.querySelector('.accordion-icon');
       if (icon) {
-        icon.src = '/assets/svg/cursor-open.svg';
+        icon.src = 'assets/svg/cursor-open.svg';
       }
     });
   }
@@ -69,19 +78,18 @@ document.addEventListener('DOMContentLoaded', () => {
         item.classList.add('open');
         const icon = item.querySelector('.accordion-icon');
         if (icon) {
-          icon.src = '/assets/svg/cursor-close.svg';
+          icon.src = 'assets/svg/cursor-close.svg';
         }
       }
     });
   });
 
-  
   const firstItem = document.querySelector('.accordion-item');
   if (firstItem) {
     firstItem.classList.add('open');
     const firstIcon = firstItem.querySelector('.accordion-icon');
     if (firstIcon) {
-      firstIcon.src = '/assets/svg/cursor-close.svg';
+      firstIcon.src = 'assets/svg/cursor-close.svg';
     }
   }
 

@@ -3,9 +3,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: #101010;
+    background: rgba(0, 0, 0, 0.9);
     z-index: 999;
-    height: 100px; 
+    height: 80px; 
     display: flex;
     flex-direction: column;
     justify-content: flex-end; 
@@ -20,8 +20,8 @@ header {
   
   
   .logo-img {
-    height: 25.05px;
-    width: 86.15px;
+    height: 25px;
+    width: 86px;
   }
   
   nav {
@@ -32,7 +32,18 @@ header {
   
   .progress-bar {
     height: 4px;
-    background: #e6007e;
+    background: #ED145B;
     width: 0;
     transform-origin: left center;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      height: 60px;
+    }
+    
+    .logo-img {
+      height: 20px;
+      width: 70px;
+    }
   }

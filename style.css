@@ -1,11 +1,11 @@
-@import url('/styles/header.css');
-@import url('/styles/font.css');
-@import url('/styles/hero.css'); 
-@import url('/styles/button.css');
-@import url('/styles/animation.css');
-@import url('/styles/base.css');
-@import url('/styles/education.css');
-@import url('/styles/structure.css');
+@import url('styles/header.css');
+@import url('styles/font.css');
+@import url('styles/hero.css'); 
+@import url('styles/button.css');
+@import url('styles/animation.css');
+@import url('styles/base.css');
+@import url('styles/education.css');
+@import url('styles/structure.css');
 
 /*#splash {
   position: fixed;
@@ -26,47 +26,39 @@
 }*/
 
 
-/* Modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  padding-top: 60px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.8);
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  max-width: 80%;
-}
-
-.close {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  color: #fff;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-
 .parallax {
   height: 50vh;
-  background: url('/assets/imgs/break-image.jpg') no-repeat center center/cover;
+  background: url('assets/imgs/break-image.jpg') no-repeat center center/cover;
   background-attachment: fixed;
 }
 
 .contact {
   text-align: center;
-  padding: 50px;
+  padding: 100px 0;
   background: #000;
+  color: white;
+}
+
+.contact h2 {
+  font-family: 'GothamHTF-Book', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #D6E6F2;
+}
+
+.contact-btn {
+  background-color: transparent;
+  border: 1px solid #ED145B; /* Magenta */
+  color: #ED145B;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-family: 'GothamHTF-Bold', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #ED145B;
   color: white;
 }
 

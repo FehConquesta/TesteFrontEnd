@@ -1,17 +1,14 @@
-
 /* Section Education */
 .section-education {
   padding: 60px 0;
   position: relative;
+  background-color: #F5F5F5;
 }
-
-
 .container-education {
   max-width: 100%;
   padding: 0 120px;
   margin: 0 auto;
 }
-
 .section-title {
   font-size: 80px;
   font-weight: bold;
@@ -19,80 +16,68 @@
   text-transform: uppercase;
   color: #101010;
 }
-
-
 .content-columns {
   display: flex;
   gap: 50px;
-  margin-left: 8%; 
+  margin-left: 8%;
   margin-right: 8%;
 }
-
 .education-text {
   flex: 1;
 }
-
 .education-info {
   flex: 1;
 }
-
 /* Estilo de texto */
 .section-description,
 .education-info p {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.5;
   margin-bottom: 20px;
+  color: #555555;
 }
-
 /* Imagem e legenda */
 .education-figure {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-
 .education-img {
   width: 100%;
   display: block;
 }
-
 figcaption {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 10px;
-  color: #333;
+  color: #555555;
 }
-
 /* Listas */
 .education-list {
   list-style: none;
   margin: 20px 0;
 }
-
 .education-list-item {
   margin-bottom: 15px;
-  font-size: 16px;
+  font-size: 20px;
+  color: #555555;
 }
-
 .slash {
-  color: #FF0066;
+  color: #ED145B;
   font-weight: bold;
   margin-right: 6px;
 }
-
 .sub-list {
   list-style: none;
   margin: 10px 0 20px 20px;
 }
-
 .sub-list li {
   margin-bottom: 5px;
-  font-size: 16px;
+  font-size: 18px;
+  color: #ED145B;
 }
-
 .bullet {
-  color: #FF0066;
+  color: #ED145B;
   margin-right: 6px;
 }
-
 /* Modal */
 .modal {
   display: none;
@@ -104,14 +89,12 @@ figcaption {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
 }
-
 .modal-content {
   margin: auto;
   display: block;
   max-width: 80%;
   max-height: 80%;
 }
-
 .close {
   position: absolute;
   top: 15px;
@@ -120,4 +103,31 @@ figcaption {
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 40px;
+  }
+  .section-description,
+  .education-info p {
+    font-size: 18px;
+  }
+  figcaption {
+    font-size: 12px;
+  }
+  .education-list-item {
+    font-size: 18px;
+  }
+  .sub-list li {
+    font-size: 16px;
+    color: #ED145B;
+  }
+  .container-education {
+    padding: 0 20px;
+  }
+  .content-columns {
+    flex-direction: column;
+  }
 }

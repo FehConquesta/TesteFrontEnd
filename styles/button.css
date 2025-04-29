@@ -1,13 +1,11 @@
 /*Botão para descer a pagina */
 .scroll-down-container {
-    position: absolute;
-    bottom: 85px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
+    align-items: flex-start;
+    margin-top: 40px;
+}
 
 .scroll-down-btn {
     display: flex;
@@ -16,48 +14,56 @@
     background: none;
     border: none;
     cursor: pointer;
-  }
+}
   
-  .scroll-down-btn span {
+.scroll-down-btn span {
     color: #fff;
     margin-bottom: 8px;
     font-size: 14px;
-  }
+    font-family: 'GothamHTF-Book', sans-serif;
+}
   
-  .scroll-down-btn .circle {
+.scroll-down-btn .circle {
     width: 50px; 
     height: 50px;
-    border: 2px solid #ffffff;
+    border: 2px solid #ED145B;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    transition: background-color 0.3s ease;
+}
+
+.scroll-down-btn:hover .circle {
+    background-color: rgba(237, 20, 91, 0.2);
+}
   
-  .scroll-down-btn .circle img {
-    width: 24px; /* Ajuste do tamanho do ícone */
+.scroll-down-btn .circle img {
+    width: 24px;
     height: 24px;
-  }
+}
 
 
- /*Botão Entre em contato */
-  .contact-btn {
-    background: none;
-    color: #e6007e;
-    border: 2px solid #e6007e;
-    padding: 10px 20px;
+/*Botão Entre em contato */
+.contact-btn {
+    background: transparent;
+    color: #ED145B;
+    border: 2px solid #ED145B;
+    padding: 15px 30px;
+    font-family: 'GothamHTF-Bold', sans-serif;
+    font-size: 16px;
     cursor: pointer;
-    transition: 0.3s;
-  }
+    transition: background-color 0.3s, color 0.3s;
+}
   
-  .contact-btn:hover {
-    background: #e6007e;
+.contact-btn:hover {
+    background: #ED145B;
     color: white;
-  }
+}
   
 
- /*Botão para subir a pagina inicial */
-  .scroll-top-btn {
+/*Botão para subir a pagina inicial */
+.scroll-top-btn {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -65,26 +71,36 @@
     border: none;
     cursor: pointer;
     opacity: 0;
-  }
-    .scroll-top-btn .circle {
+    z-index: 100;
+}
+
+.scroll-top-btn .circle {
     width: 50px;
     height: 50px;
-    border: 2px solid #e6007e;
+    border: 2px solid #ED145B;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-    .scroll-top-btn .circle img {
+    transition: background-color 0.3s ease;
+}
+
+.scroll-top-btn:hover .circle {
+    background-color: rgba(237, 20, 91, 0.2);
+}
+
+.scroll-top-btn .circle img {
     width: 24px;
     height: 24px;
-  }
-  #scrollTopBtn {
+}
+
+#scrollTopBtn {
     opacity: 0; 
     pointer-events: none; 
     transition: opacity 0.3s ease; 
-  }
-  #scrollTopBtn.show {
+}
+
+#scrollTopBtn.show {
     opacity: 1;
     pointer-events: auto;
-  }
+}

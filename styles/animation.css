@@ -8,3 +8,19 @@
     transform: translateX(0);
     transition: all 1s ease;
   }
+
+  /* Animação de entrada suave */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 0.8s ease forwards;
+  }

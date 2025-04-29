@@ -51,6 +51,32 @@
     
   }
   
+  .scroll-down-container {
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      padding: 0 20px;
+      text-align: center;
+      align-items: center;
+    }
+    
+    .text__container {
+      max-width: 100%;
+    }
+    
+    .title__magenta,
+    .subtitle__bold {
+      font-size: 40px;
+    }
+    
+    .description {
+      font-size: 14px;
+      max-width: 100%;
+    }
+  }
+  
   
 
   
