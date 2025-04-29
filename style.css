@@ -27,35 +27,9 @@
 
 
 .parallax {
-  position: relative;
   height: 50vh;
-  overflow: hidden;
-}
-
-.parallax::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('assets/imgs/break-image.jpg') no-repeat center center;
-  background-size: cover;
-  z-index: -1;
-  transform: translateZ(0);
-  will-change: transform;
-}
-
-.parallax-content {
-  height: 100%;
-  position: relative;
-}
-
-/* Para navegadores que suportam background-attachment: fixed */
-@supports (background-attachment: fixed) {
-  .parallax::before {
-    background-attachment: fixed;
-  }
+  background: url('assets/imgs/break-image.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
 }
 
 .contact {
@@ -87,6 +61,7 @@
   
   .parallax {
     height: 30vh;
+    background-attachment: scroll; /* Melhora compatibilidade em dispositivos móveis */
   }
 }
 

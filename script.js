@@ -16,26 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
     const scrollPercent = (scrollTop / docHeight) * 100;
     progress.style.width = scrollPercent + '%';
-    
-    // Parallax manual para melhor compatibilidade com dispositivos móveis
-    const parallaxElements = document.querySelectorAll('.parallax');
-    parallaxElements.forEach(element => {
-      const speed = 0.5;
-      const offset = window.scrollY;
-      
-      // Ajusta a posição conforme o scroll
-      const yPos = -(offset * speed);
-      const transform = 'translate3d(0px, ' + yPos + 'px, 0px)';
-      
-      if (element.querySelector('.parallax-content')) {
-        element.querySelector('.parallax-content').style.transform = transform;
-      } else if (element.querySelector(':before')) {
-        // Aplica para o pseudo-elemento if possível
-        const style = document.createElement('style');
-        style.textContent = `.parallax::before { transform: translate3d(0px, ${yPos}px, 0px); }`;
-        document.head.appendChild(style);
-      }
-    });
   });
 
   const modal = document.getElementById('modal');
