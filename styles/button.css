@@ -109,37 +109,11 @@
 
 @media (max-width: 768px) {
     .contact-btn {
-        font-size: 20px;
-        padding: 12px 25px;
-    }
-    
-    .scroll-down-btn .circle,
-    .scroll-top-btn .circle {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .scroll-down-btn .circle img,
-    .scroll-top-btn .circle img {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .scroll-top-btn {
-        bottom: 20px;
-        right: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .contact-btn {
-        font-size: 18px;
+        font-size: 16px;
         padding: 10px 20px;
         border-width: 1px;
-    }
-    
-    .scroll-down-btn span {
-        font-size: 10px;
+        display: inline-block;
+        margin-left: 15px;
     }
     
     .scroll-down-btn .circle,
@@ -158,5 +132,28 @@
     .scroll-top-btn {
         bottom: 15px;
         right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    
+    .scroll-down-btn span {
+        font-size: 10px;
+    }
+    
+    .scroll-down-btn .circle,
+    .scroll-top-btn .circle {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .scroll-down-btn .circle img,
+    .scroll-top-btn .circle img {
+        width: 14px;
+        height: 14px;
     }
 }

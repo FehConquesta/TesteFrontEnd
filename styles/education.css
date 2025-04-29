@@ -115,34 +115,40 @@ figcaption {
 @media (max-width: 768px) {
   .section-education {
     padding: 40px 0;
+    background-color: #1a1a1a;
+    color: #fff;
   }
   
   .section-title {
-    font-size: 40px;
-    margin-bottom: 30px;
-    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #fff;
   }
   
   .section-description,
   .education-info p {
-    font-size: 18px;
+    font-size: 16px;
+    color: #d6e7f2;
   }
   
   figcaption {
     font-size: 12px;
+    color: #d6e7f2;
   }
   
   .education-list-item {
-    font-size: 18px;
+    font-size: 16px;
+    color: #d6e7f2;
   }
   
   .sub-list li {
-    font-size: 16px;
+    font-size: 14px;
     color: #ED145B;
   }
   
   .container-education {
-    padding: 0 20px;
+    padding: 0 15px;
   }
   
   .content-columns {
@@ -160,28 +166,7 @@ figcaption {
   }
   
   .section-title {
-    font-size: 36px;
+    font-size: 24px;
     margin-bottom: 20px;
-  }
-  
-  .section-description,
-  .education-info p {
-    font-size: 16px;
-  }
-  
-  .education-list-item {
-    font-size: 16px;
-  }
-  
-  .sub-list li {
-    font-size: 14px;
-  }
-  
-  .content-columns {
-    gap: 20px;
-  }
-  
-  .container-education {
-    padding: 0 15px;
   }
 }
