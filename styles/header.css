@@ -46,4 +46,23 @@ header {
       height: 20px;
       width: 70px;
     }
+    
+    .progress-bar {
+      height: 3px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      height: 50px;
+    }
+    
+    .logo-img {
+      height: 18px;
+      width: 63px;
+    }
+    
+    .progress-bar {
+      height: 2px;
+    }
   }

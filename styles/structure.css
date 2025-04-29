@@ -114,7 +114,7 @@
 
 @media (max-width: 768px) {
   .structure {
-    padding: 60px 20px;
+    padding: 40px 0;
   }
   
   .structure-container {
@@ -124,6 +124,7 @@
   .structure .section-title {
     font-size: 40px;
     margin-bottom: 40px;
+    text-align: center;
   }
   
   .accordion-item {
@@ -132,11 +133,41 @@
   
   .accordion-header {
     font-size: 24px;
+    padding: 20px 0;
+    line-height: 1.3;
   }
   
   .accordion-content {
     font-size: 16px;
     margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .structure {
+    padding: 30px 0;
+  }
+  
+  .structure-container {
+    padding: 0 15px;
+  }
+  
+  .structure .section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  
+  .accordion-header {
+    font-size: 20px;
+    padding: 15px 0;
+    line-height: 1.3;
+  }
+  
+  .accordion-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    font-size: 16px;
   }
 }
 

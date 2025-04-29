@@ -46,9 +46,31 @@
   color: #D6E6F2;
 }
 
+/* Regras gerais de responsividade */
 @media (max-width: 768px) {
   .contact h2 {
     font-size: 40px;
+  }
+  
+  .parallax {
+    height: 30vh;
+    background-attachment: scroll; /* Melhora compatibilidade em dispositivos móveis */
+  }
+  
+  .contact {
+    padding: 60px 0;
+  }
+}
+
+/* Regra para dispositivos muito pequenos */
+@media (max-width: 480px) {
+  .contact h2 {
+    font-size: 36px;
+    padding: 0 15px;
+  }
+  
+  .parallax {
+    height: 25vh;
   }
 }
 

@@ -13,3 +13,27 @@
     color: #d6e7f2;
   }
   
+  /* Estilos para melhorar a experiência em dispositivos touch */
+  @media (max-width: 768px) {
+    html, body {
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
+    
+    button {
+      touch-action: manipulation;
+    }
+  }
+  
+  /* Aumenta o tamanho dos elementos clicáveis em dispositivos touch */
+  @media (max-width: 480px) {
+    button, 
+    [role="button"], 
+    input[type="submit"], 
+    input[type="reset"], 
+    input[type="button"] {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+  

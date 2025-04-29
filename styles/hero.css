@@ -56,10 +56,15 @@
       padding: 0 20px;
       text-align: center;
       align-items: center;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 1) 40%, rgba(16, 16, 16, 0.7)),
+        url('/assets/imgs/header.jpg');
+      background-size: cover;
+      background-position: center;
     }
     
     .text__container {
       max-width: 100%;
+      margin: 0 auto;
     }
     
     .title__magenta,
@@ -70,6 +75,28 @@
     .description {
       font-size: 18px;
       max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 0 15px;
+    }
+    
+    .title__magenta,
+    .subtitle__bold {
+      font-size: 36px;
+      -webkit-text-stroke: 1px #ED145B;
+    }
+    
+    .description {
+      font-size: 16px;
+    }
+    
+    .scroll-down-container {
+      bottom: 20px;
     }
   }
   
@@ -77,6 +104,7 @@
 
   
 
+  
   
   
   

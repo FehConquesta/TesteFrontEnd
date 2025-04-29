@@ -110,5 +110,53 @@
 @media (max-width: 768px) {
     .contact-btn {
         font-size: 20px;
+        padding: 12px 25px;
+    }
+    
+    .scroll-down-btn .circle,
+    .scroll-top-btn .circle {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .scroll-down-btn .circle img,
+    .scroll-top-btn .circle img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .scroll-top-btn {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-btn {
+        font-size: 18px;
+        padding: 10px 20px;
+        border-width: 1px;
+    }
+    
+    .scroll-down-btn span {
+        font-size: 10px;
+    }
+    
+    .scroll-down-btn .circle,
+    .scroll-top-btn .circle {
+        width: 35px;
+        height: 35px;
+        border-width: 1px;
+    }
+    
+    .scroll-down-btn .circle img,
+    .scroll-top-btn .circle img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .scroll-top-btn {
+        bottom: 15px;
+        right: 15px;
     }
 }
