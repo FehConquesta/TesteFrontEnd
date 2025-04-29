@@ -27,15 +27,41 @@
 
 
 .parallax {
+  position: relative;
   height: 50vh;
-  background: url('assets/imgs/break-image.jpg') no-repeat center center/cover;
-  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('assets/imgs/break-image.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.parallax-content {
+  height: 100%;
+  position: relative;
+}
+
+/* Para navegadores que suportam background-attachment: fixed */
+@supports (background-attachment: fixed) {
+  .parallax::before {
+    background-attachment: fixed;
+  }
 }
 
 .contact {
   text-align: center;
   padding: 100px 0;
-  background: #000;
+  background: #000000;
   color: white;
 }
 
@@ -43,7 +69,7 @@
   font-family: 'GothamHTF-Medium', sans-serif;
   font-size: 80px;
   margin-bottom: 40px;
-  color: #D6E6F2;
+  color: #ACC1CC;
 }
 
 /* Regras gerais de responsividade */
@@ -61,7 +87,6 @@
   
   .parallax {
     height: 30vh;
-    background-attachment: scroll; /* Melhora compatibilidade em dispositivos móveis */
   }
 }
 

@@ -115,7 +115,7 @@ figcaption {
 @media (max-width: 768px) {
   .section-education {
     padding: 40px 0;
-    background-color: #1a1a1a;
+    background-color: #101010;
     color: #fff;
   }
   
@@ -129,17 +129,17 @@ figcaption {
   .section-description,
   .education-info p {
     font-size: 16px;
-    color: #d6e7f2;
+    color: #ACC1CC;
   }
   
   figcaption {
     font-size: 12px;
-    color: #d6e7f2;
+    color: #ACC1CC;
   }
   
   .education-list-item {
     font-size: 16px;
-    color: #d6e7f2;
+    color: #ACC1CC;
   }
   
   .sub-list li {

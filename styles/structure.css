@@ -1,6 +1,6 @@
 .structure {
   position: relative;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 21, 41, 0.8));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(16, 16, 16, 0.9));
   padding: 60px 0;
   overflow: hidden;
   margin: 0 auto;
@@ -18,7 +18,7 @@
   font-family: 'GothamHTF-Medium', sans-serif;
   font-size: 80px;
   font-weight: 500;
-  color: #D6E6F2;
+  color: #ACC1CC;
   text-align: left;
   margin-bottom: 60px;
   text-transform: uppercase;
@@ -49,7 +49,7 @@
   border: none;
   font-family: 'GothamHTF-Bold', sans-serif;
   font-size: 25px;
-  color: #fff;
+  color: #ACC1CC;
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -101,7 +101,7 @@
   font-family: 'GothamHTF-Book', sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  color: rgba(214, 230, 242, 0.9);
+  color: #ACC1CC;
   padding: 0 0;
   margin-right: 50px;
 }
