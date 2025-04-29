@@ -103,12 +103,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  /*window.addEventListener('load', () => {
-    const splash = document.getElementById('splash');
-    splash.style.opacity = 0;
-    setTimeout(() => {
-      splash.style.display = 'none';
-    }, 1600); // Tempo para desaparecer (em milissegundos)
-  });*/
 });
 

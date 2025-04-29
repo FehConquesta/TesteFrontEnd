@@ -1,0 +1,76 @@
+.parallax {
+  height: 50vh;
+  background: url('/assets/imgs/break-image.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.contact {
+  text-align: center;
+  padding: 100px 0;
+  background: #000000;
+  color: white;
+}
+
+.contact h2 {
+  font-family: 'GothamHTF-Medium', sans-serif;
+  font-size: 80px;
+  margin-bottom: 40px;
+  color: #ACC1CC;
+}
+
+.contact-btn {
+  background-color: transparent;
+  border: 1px solid #ED145B; /* Magenta */
+  color: #ED145B;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-family: 'GothamHTF-Bold', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #ED145B;
+  color: white;
+}
+
+/* Regras gerais de responsividade */
+@media (max-width: 768px) {
+  .contact h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 0 15px;
+  }
+  
+  .contact {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .parallax {
+    height: 550px;
+    background-attachment: scroll;
+  }
+
+  .contact-btn {
+    margin: 0 auto;
+    display: block;
+    font-size: 18px;
+  }
+}
+
+/* Regra para dispositivos muito pequenos */
+@media (max-width: 480px) {
+  .contact h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .parallax {
+    height: 550px;
+  }
+  
+  .contact-btn {
+    font-size: 18px;
+  }
+}

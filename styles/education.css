@@ -1,4 +1,3 @@
-/* Section Education */
 .section-education {
   padding: 60px 0;
   position: relative;
@@ -149,7 +148,7 @@ figcaption {
   cursor: pointer;
 }
 
-/* Media query for mobile devices */
+/*for mobile devices */
 @media (max-width: 768px) {
   .section-education {
     padding: 40px 0;
