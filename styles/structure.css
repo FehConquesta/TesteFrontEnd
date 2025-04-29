@@ -1,45 +1,53 @@
 .structure {
   position: relative;
-  background-color: #000; /* fundo principal */
-  padding: 80px 20px;
+  background-color: #000814;
+  padding: 60px 0;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0 auto; 
   max-width: 100%;
+ 
+}
+
+.structure-container {
+  max-width: 100%;
+  padding: 0 120px;
+  margin: 0 auto;
 }
 
 .structure .section-title {
-  font-family: 'GothamHTF-Book', sans-serif;
-  font-size: 2.5rem;
-  color: #D6E6F2;
-  text-align: left;
-  margin-bottom: 40px;
+  font-family: 'Gotham HTF', sans-serif;
+  font-size: 80px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 60px;
   position: relative;
   z-index: 1;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  text-transform: uppercase;
 }
 
 .accordion-item {
-  border-top: 2px solid #ffffff50;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
   z-index: 1;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.accordion-item:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .accordion-item.open {
-  border-top: 2px solid #ED145B; /* magenta */
+  border-top: 1px solid #ED145B;
 }
 
 .accordion-header {
   width: 100%;
-  padding: 20px 0;
+  padding: 25px 0;
   background: none;
   border: none;
-  font-family: 'GothamHTF-Bold', sans-serif;
-  font-size: 1.2rem;
+  font-family: 'Gotham HTF', sans-serif;
+  font-size: 18px;
   color: #fff;
   text-align: left;
   display: flex;
@@ -47,17 +55,25 @@
   align-items: center;
   cursor: pointer;
   transition: color 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 .accordion-item.open .accordion-header {
-  color: #ED145B; /* magenta quando aberto */
+  color: #fff;
 }
 
 .accordion-icon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   margin-left: 20px;
   transition: transform 0.3s ease;
+  background-color: #ED145B;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .accordion-content {
@@ -65,16 +81,18 @@
   opacity: 0;
   overflow: hidden;
   transition: max-height 0.5s ease, opacity 0.5s ease;
-  font-family: 'GothamHTF-Book', sans-serif;
-  font-size: 1rem;
-  color: #D6E6F2;
+  font-family: 'Gotham HTF', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #d6e6f2;
   padding: 0 0;
+  margin-right: 50px;
 }
 
 .accordion-item.open .accordion-content {
   max-height: 1000px;
   opacity: 1;
-  padding: 20px 0;
+  padding: 20px 0 30px 0;
 }
 
 @media (max-width: 768px) {
@@ -82,12 +100,26 @@
     padding: 60px 20px;
   }
   
+  .structure-container {
+    padding: 0 20px;
+  }
+  
   .structure .section-title {
-    font-size: 2rem;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .accordion-item {
+    max-width: 100%;
   }
   
   .accordion-header {
-    font-size: 1rem;
+    font-size: 16px;
+  }
+  
+  .accordion-content {
+    font-size: 14px;
+    margin-right: 0;
   }
 }
 

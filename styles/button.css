@@ -1,10 +1,12 @@
 /*Botão para descer a pagina */
 .scroll-down-container {
-    position: relative;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 40px;
+    align-items: center;
 }
 
 .scroll-down-btn {

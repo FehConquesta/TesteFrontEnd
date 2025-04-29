@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       item.classList.remove('open');
       const icon = item.querySelector('.accordion-icon');
       if (icon) {
-        icon.src = 'assets/svg/cursor-open.svg';
+        icon.textContent = "+";
       }
     });
   }
@@ -78,18 +78,25 @@ document.addEventListener('DOMContentLoaded', () => {
         item.classList.add('open');
         const icon = item.querySelector('.accordion-icon');
         if (icon) {
-          icon.src = 'assets/svg/cursor-close.svg';
+          icon.textContent = "-";
         }
       }
     });
   });
 
-  const firstItem = document.querySelector('.accordion-item');
-  if (firstItem) {
+  // Configurar o primeiro item como aberto por padrão
+  const accordionItems = document.querySelectorAll('.accordion-item');
+  if (accordionItems.length > 0) {
+    const firstItem = accordionItems[0];
+    
+    // Fechar todos primeiro
+    closeAllAccordions();
+    
+    // Abrir o primeiro item
     firstItem.classList.add('open');
-    const firstIcon = firstItem.querySelector('.accordion-icon');
-    if (firstIcon) {
-      firstIcon.src = 'assets/svg/cursor-close.svg';
+    const icon = firstItem.querySelector('.accordion-icon');
+    if (icon) {
+      icon.textContent = "-";
     }
   }
 
