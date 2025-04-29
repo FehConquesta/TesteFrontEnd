@@ -60,7 +60,7 @@
   }
   
   .parallax {
-    height: 30vh;
+    height: 550px;
     background-attachment: scroll; /* Melhora compatibilidade em dispositivos móveis */
   }
 }
@@ -72,7 +72,7 @@
   }
   
   .parallax {
-    height: 25vh;
+    height: 550px;
   }
 }
 
