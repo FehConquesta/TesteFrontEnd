@@ -1,10 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const titles = document.querySelectorAll('.animated-title');
-  titles.forEach((title, index) => {
-    setTimeout(() => {
-      title.classList.add('show');
-    }, index * 500);
-  });
+  // Splash Screen
+  const splashScreen = document.querySelector('.splash-screen');
+  
+  // Esconder splash screen após 2 segundos
+  setTimeout(() => {
+    splashScreen.classList.add('hidden');
+    
+    // Animar títulos após a splash screen
+    const titles = document.querySelectorAll('.animated-title');
+    titles.forEach((title, index) => {
+      setTimeout(() => {
+        title.classList.add('show');
+      }, index * 500);
+    });
+  }, 2000);
 
   document.getElementById('scrollDownBtn').addEventListener('click', () => {
     document.getElementById('education').scrollIntoView({ behavior: 'smooth' });
