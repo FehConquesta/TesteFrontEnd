@@ -134,6 +134,7 @@
   color: #ACC1CC;
   padding: 0 0;
   margin-right: 50px;
+  text-align: justify;
 }
 
 .accordion-item.open .accordion-content {

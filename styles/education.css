@@ -72,15 +72,18 @@
   line-height: 1.5;
   margin-bottom: 20px;
   color: #ACC1CC;
+  text-align: justify;
 }
 /* Imagem e legenda */
 .education-figure {
   margin-top: 20px;
   margin-bottom: 10px;
+  
 }
 .education-img {
   width: 100%;
   display: block;
+  cursor: pointer;
 }
 figcaption {
   font-family: 'Roboto', sans-serif;
@@ -111,7 +114,7 @@ figcaption {
 }
 .sub-list li {
   font-family: 'GothamHTF-Book', sans-serif;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   font-size: 18px;
   color: #ED145B;
 }

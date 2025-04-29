@@ -34,7 +34,7 @@
     font-weight: 500;
     line-height: 1;
     text-transform: uppercase;
-    color: #ACC1CC;
+    color: #ACC1CC !important;
     margin-bottom: 20px;
   }
   
@@ -88,6 +88,11 @@
     .subtitle__bold {
       font-size: 28px;
       -webkit-text-stroke: 1px #ED145B;
+    }
+    
+    .subtitle__bold {
+      color: #ACC1CC !important;
+      -webkit-text-stroke: 0;
     }
     
     .description {
