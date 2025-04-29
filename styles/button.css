@@ -21,8 +21,8 @@
 .scroll-down-btn span {
     color: #fff;
     margin-bottom: 8px;
-    font-size: 14px;
-    font-family: 'GothamHTF-Book', sans-serif;
+    font-size: 12px;
+    font-family: 'GothamHTF-Medium', sans-serif;
 }
   
 .scroll-down-btn .circle {
@@ -52,8 +52,8 @@
     color: #ED145B;
     border: 2px solid #ED145B;
     padding: 15px 30px;
-    font-family: 'GothamHTF-Bold', sans-serif;
-    font-size: 16px;
+    font-family: 'GothamHTF-Medium', sans-serif;
+    font-size: 30px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -105,4 +105,10 @@
 #scrollTopBtn.show {
     opacity: 1;
     pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+    .contact-btn {
+        font-size: 20px;
+    }
 }

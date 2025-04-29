@@ -20,7 +20,7 @@
   }
   
   .title__magenta{
-    font-family: 'Gotham HTF', sans-serif;
+    font-family: 'GothamHTF-Medium', sans-serif;
     font-size: 80px;
     font-weight: 500;
     line-height: 1;
@@ -31,7 +31,7 @@
   }
   
   .subtitle__bold {
-    font-family: 'Gotham HTF', sans-serif;
+    font-family: 'GothamHTF-Medium', sans-serif;
     font-size: 80px;
     font-weight: 500;
     line-height: 1;
@@ -42,8 +42,8 @@
   
   
   .description {
-      font-family: 'Gotham HTF', sans-serif;
-      font-size: 16px;
+      font-family: 'GothamHTF-Book', sans-serif;
+      font-size: 20px;
       font-weight: 400;
       color: #d6e7f2;
       max-width: 600px;
@@ -68,7 +68,7 @@
     }
     
     .description {
-      font-size: 14px;
+      font-size: 18px;
       max-width: 100%;
     }
   }

@@ -10,6 +10,7 @@
   margin: 0 auto;
 }
 .section-title {
+  font-family: 'GothamHTF-Medium', sans-serif;
   font-size: 80px;
   font-weight: bold;
   margin-bottom: 40px;
@@ -31,6 +32,7 @@
 /* Estilo de texto */
 .section-description,
 .education-info p {
+  font-family: 'GothamHTF-Book', sans-serif;
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -46,6 +48,8 @@
   display: block;
 }
 figcaption {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   margin-top: 10px;
   color: #555555;
@@ -56,6 +60,7 @@ figcaption {
   margin: 20px 0;
 }
 .education-list-item {
+  font-family: 'GothamHTF-Book', sans-serif;
   margin-bottom: 15px;
   font-size: 20px;
   color: #555555;
@@ -70,6 +75,7 @@ figcaption {
   margin: 10px 0 20px 20px;
 }
 .sub-list li {
+  font-family: 'GothamHTF-Book', sans-serif;
   margin-bottom: 5px;
   font-size: 18px;
   color: #ED145B;
