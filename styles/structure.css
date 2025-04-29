@@ -3,29 +3,10 @@
   background-color: #000; /* fundo principal */
   padding: 80px 20px;
   overflow: hidden;
+
+  
 }
 
-.structure::before,
-.structure::after {
-  content: '';
-  position: absolute;
-  top: 2926px;
-  width: 450px;
-  height: 450px;
-  background: #006BB780;
-  filter: blur(400px);
-  border-radius: 50%;
-  transform: translateY(-50%);
-  z-index: 0;
-}
-
-.structure::before {
-  left: -200px;
-}
-
-.structure::after {
-  right: -300px;
-}
 
 .section-title {
   font-family: 'GothamHTF-Book', sans-serif;
