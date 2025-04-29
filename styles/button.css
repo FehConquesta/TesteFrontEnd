@@ -116,6 +116,10 @@
         margin-left: 15px;
     }
     
+    .scroll-down-container {
+        display: none !important;
+    }
+    
     .scroll-down-btn .circle,
     .scroll-top-btn .circle {
         width: 35px;
