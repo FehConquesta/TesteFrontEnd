@@ -52,6 +52,8 @@
     .hero {
       padding: 0 20px;
       align-items: flex-start;
+      height: auto;
+      min-height: 75vh;
       background: linear-gradient(180deg, rgba(0, 0, 0, 1) 30%, rgba(16, 16, 16, 0.7)),
         url('/assets/imgs/header.jpg');
       background-size: cover;
@@ -64,6 +66,7 @@
       max-width: 100%;
       text-align: left;
       padding-top: 100px;
+      padding-bottom: 50px;
     }
     
     .title__magenta,
@@ -77,11 +80,16 @@
       max-width: 100%;
       text-align: left;
     }
+    
+    .scroll-down-container {
+      display: none;
+    }
   }
   
   @media (max-width: 480px) {
     .hero {
       padding: 0 15px;
+      min-height: 65vh;
     }
     
     .title__magenta,
@@ -97,10 +105,6 @@
     
     .description {
       font-size: 16px;
-    }
-    
-    .scroll-down-container {
-      bottom: 20px;
     }
   }
   
