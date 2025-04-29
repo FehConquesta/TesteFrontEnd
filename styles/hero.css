@@ -71,12 +71,12 @@
     
     .title__magenta,
     .subtitle__bold {
-      font-size: 36px;
+      font-size: 40px;
       text-align: left;
     }
     
     .description {
-      font-size: 16px;
+      font-size: 18px;
       max-width: 100%;
       text-align: left;
     }
@@ -89,12 +89,12 @@
   @media (max-width: 480px) {
     .hero {
       padding: 0 15px;
-      min-height: 65vh;
+      min-height: 464px;
     }
     
     .title__magenta,
     .subtitle__bold {
-      font-size: 28px;
+      font-size: 40px;
       -webkit-text-stroke: 1px #ED145B;
     }
     
@@ -104,7 +104,7 @@
     }
     
     .description {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
   

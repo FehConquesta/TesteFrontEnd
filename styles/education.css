@@ -157,7 +157,7 @@ figcaption {
   }
   
   .section-title {
-    font-size: 28px;
+    font-size: 40px;
     margin-bottom: 20px;
     text-align: left;
     color: #fff;
@@ -165,7 +165,7 @@ figcaption {
   
   .section-description,
   .education-info p {
-    font-size: 16px;
+    font-size: 18px;
     color: #ACC1CC;
   }
   
@@ -175,12 +175,12 @@ figcaption {
   }
   
   .education-list-item {
-    font-size: 16px;
+    font-size: 18px;
     color: #ACC1CC;
   }
   
   .sub-list li {
-    font-size: 14px;
+    font-size: 18px;
     color: #ED145B;
   }
   
@@ -203,7 +203,20 @@ figcaption {
   }
   
   .section-title {
-    font-size: 24px;
+    font-size: 40px;
     margin-bottom: 20px;
+  }
+  
+  .section-description,
+  .education-info p {
+    font-size: 18px;
+  }
+  
+  .education-list-item {
+    font-size: 18px;
+  }
+  
+  .sub-list li {
+    font-size: 18px;
   }
 }
