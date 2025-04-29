@@ -62,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
       item.classList.remove('open');
       const icon = item.querySelector('.accordion-icon');
       if (icon) {
-        icon.textContent = "+";
+        icon.classList.remove('minus');
+        icon.classList.add('plus');
       }
     });
   }
@@ -78,7 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
         item.classList.add('open');
         const icon = item.querySelector('.accordion-icon');
         if (icon) {
-          icon.textContent = "-";
+          icon.classList.remove('plus');
+          icon.classList.add('minus');
         }
       }
     });
@@ -96,7 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
     firstItem.classList.add('open');
     const icon = firstItem.querySelector('.accordion-icon');
     if (icon) {
-      icon.textContent = "-";
+      icon.classList.remove('plus');
+      icon.classList.add('minus');
     }
   }
 
