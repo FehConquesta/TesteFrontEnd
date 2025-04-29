@@ -5,10 +5,14 @@ Este repositório contém um site responsivo sobre a FIAP, uma faculdade de tecn
 ## 📋 Alterações
 
 Como foi dado a liberdade de realizar alterações, alterei três pontos em relação ao projeto enviado pelo figma.
+
 -Background da section Education
+
     Achei que branco não combinava com a identidade visual da Fiap, portanto realizei a alteração no background color.
 -Titulo do Accordion
+
     Quando selecionado o titulo do accordion fica na cor magenta
+    
 -Realizei a inclusão de uma splashScreen semelhante a do site oficial da Fiap.
 
 
