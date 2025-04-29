@@ -50,12 +50,12 @@
 @media (max-width: 768px) {
   .contact h2 {
     font-size: 28px;
-    text-align: left;
+    text-align: center;
     padding: 0 15px;
   }
   
   .contact {
-    text-align: left;
+    text-align: center;
     padding: 40px 0;
   }
   
@@ -63,12 +63,18 @@
     height: 550px;
     background-attachment: scroll; /* Melhora compatibilidade em dispositivos móveis */
   }
+
+  .contact-btn {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 /* Regra para dispositivos muito pequenos */
 @media (max-width: 480px) {
   .contact h2 {
     font-size: 24px;
+    text-align: center;
   }
   
   .parallax {
