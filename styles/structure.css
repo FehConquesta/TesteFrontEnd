@@ -1,6 +1,6 @@
 .structure {
   position: relative;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(16, 16, 16, 0.9));
+  background-color: #000000;
   padding: 60px 0;
   overflow: hidden;
   margin: 0 auto;
@@ -8,10 +8,40 @@
   color: #fff;
 }
 
+.structure::before {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  top: 25%;
+  left: -176px;
+  background: #006BB7;
+  border-radius: 50%;
+  filter: blur(400px);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.structure::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  bottom: 15%;
+  right: -150px;
+  background: #006BB7;
+  border-radius: 50%;
+  filter: blur(400px);
+  opacity: 0.5;
+  z-index: 1;
+}
+
 .structure-container {
   max-width: 100%;
   padding: 0 120px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .structure .section-title {

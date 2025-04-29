@@ -2,12 +2,45 @@
 .section-education {
   padding: 60px 0;
   position: relative;
-  background-color: #F5F5F5;
+  background-color: #000000;
+  color: #fff;
+  overflow: hidden;
 }
+
+.section-education::before {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  top: 15%;
+  right: -176px;
+  background: #006BB7;
+  border-radius: 50%;
+  filter: blur(400px);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.section-education::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  bottom: 10%;
+  left: -150px;
+  background: #006BB7;
+  border-radius: 50%;
+  filter: blur(400px);
+  opacity: 0.5;
+  z-index: 1;
+}
+
 .container-education {
   max-width: 100%;
   padding: 0 120px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 .section-title {
   font-family: 'GothamHTF-Medium', sans-serif;
@@ -15,13 +48,15 @@
   font-weight: bold;
   margin-bottom: 40px;
   text-transform: uppercase;
-  color: #101010;
+  color: #ACC1CC;
 }
 .content-columns {
   display: flex;
   gap: 50px;
   margin-left: 8%;
   margin-right: 8%;
+  position: relative;
+  z-index: 2;
 }
 .education-text {
   flex: 1;
@@ -36,7 +71,7 @@
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 20px;
-  color: #555555;
+  color: #ACC1CC;
 }
 /* Imagem e legenda */
 .education-figure {
@@ -52,7 +87,7 @@ figcaption {
   font-weight: 400;
   font-size: 16px;
   margin-top: 10px;
-  color: #555555;
+  color: #ACC1CC;
 }
 /* Listas */
 .education-list {
@@ -63,7 +98,7 @@ figcaption {
   font-family: 'GothamHTF-Book', sans-serif;
   margin-bottom: 15px;
   font-size: 20px;
-  color: #555555;
+  color: #ACC1CC;
 }
 .slash {
   color: #ED145B;
@@ -115,8 +150,7 @@ figcaption {
 @media (max-width: 768px) {
   .section-education {
     padding: 40px 0;
-    background-color: #101010;
-    color: #fff;
+    background: linear-gradient(90deg, #000000 -20%, #101010 100%);
   }
   
   .section-title {
